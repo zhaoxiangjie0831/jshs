@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="chuanheng" content="width=device-width, initial-scale=1.0">
+    <link rel="Shortcut Icon" href="logo.ico" type="image/x-icon" />
+    <title>秘密基地</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+        /* * {
+            border: 1px solid black;
+        } */
+        .yy{
+            box-shadow: 0 12px 5px -10px rgba(0,0,0,0.1), 0 0 4px 0 rgba(0,0,0,0.1);
+            -webkit-box-shadow: 0 12px 5px -10px rgba(0,0,0,0.1), 0 0 4px 0 rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .flex{
+            display:flex;
+        }
+        .baise{
+            background-color:white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction:column;
+        }
+        .margin8{
+            margin: 8px;
+        }
+        .margin-right{
+            margin-right: 8px;
+        }
+        .margin-top{
+            margin-top: 8px;
+        }
+        .margin-left{
+            margin-left: 8px;
+        }
+        .daohang{
+            padding: 10px 20px;
+            border-bottom: 1px solid rgb(50, 50, 50);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            color:#999;
+        }
+        .back{
+            background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color:#f1f1f1 ;
+        }
+        li a{
+            padding: 8px 16px;
+            color: #000;
+            display: block;
+            text-decoration: none;
+            align-items: center;
+        }
+        li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+    </style>
+</head>
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px;z-index: 2" class="baise margin-top">
+        <div 
+            style=
+                "padding: 10px;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #999">
+            <img src="logo.ico" alt="头像" width="100px" height="100px">
+            <div style="margin-left: 10px">川恒</div>
+        </div>
+        <div class="flex1">
+            <ul>
+                <li><a href="https://www.baidu.com/" >百度</a></li>
+                <li><a href="https://www.mi.com/">小米</a></li>
+                <li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+                <li><a href="https://weibo.com/login.php">微博</a></li>
+                <li><a href="https://www.amazon.com/">亚马逊</a></li>
+            </ul>
+           
+        </div>
+    </div>
+    <!-- 主要区域 -->
+    <div class="flex1 flex column">
+        <!-- 头部区域 -->
+        <div style="height:80px;z-index: 1" class="baise yy margin-top margin-left"></div> 
+        <!-- 内容区域 -->
+        <div style="overflow: auto" class="flex1 flex">
+            <!-- 左边 -->
+            <div style="flex:3" class="flex column margin8">
+                <!-- 数据区 -->
+                <div class="flex">
+                    <div style="height: 200px" class="flex1 baise margin-right yy"></div>
+                    <div style="height: 200px" class="flex1 baise margin-right yy"></div>
+                    <div style="height: 200px" class="flex1 baise margin-right yy"></div>
+                    <div style="height: 200px" class="flex1 baise yy"></div>
+                </div>
+                <!-- 列表区-->
+                <div class="flex column">
+                    <div style="height:180px" class="baise margin-top yy back"></div>
+                    <div style="height:180px" class="baise margin-top yy back"></div>
+                    <div style="height:180px" class="baise margin-top yy back"></div>
+                    <div style="height:180px" class="baise margin-top yy back"></div>
+                    <div style="height:180px" class="baise margin-top yy back"></div>
+                    <div style="height:180px" class="baise margin-top yy back"></div>
+                </div>
+            </div>
+            <!-- 右边 -->
+            <div style="flex:1" class="flex column margin-right">
+                <!-- 上 -->
+                <div class="baise margin-top yy" style="height: 200px"></div>
+                <!-- 下 -->
+                <div class="baise margin-top yy" style="height: 350px"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
